@@ -1,4 +1,6 @@
-SquareFactorization := function(n)  // n = p^2*q
+SquareFactorization := function(n)
+    // input: n = p^2*q, where p and q are primes of roughly the same size
+    // output: p^2
 
     q2 := n^(1/3);  // we assume that q is roughly equal to p
     e := Sqrt(Log(q2)/Log(Log(q2)));
