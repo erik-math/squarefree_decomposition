@@ -9,7 +9,7 @@ SquareFactorization := function(n)
 
     prod := 1;  // prod is the integer k
     for p in PrimesUpTo(B) do
-        prod *:= p^(Ceiling(Log(p,B)));
+        prod *:= p^(Floor(Log(p,B)));  // smaller exponents is better in practice
     end for;
 
     B2 := 2*B*Round(Log(B));
